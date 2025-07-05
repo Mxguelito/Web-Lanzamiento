@@ -7,6 +7,9 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <!-- Iconos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -34,43 +37,56 @@
   </nav>
 
   <!-- Contenido -->
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Formulario de Contacto</h2>
+  <div class="container py-5">
+  <h2 class="text-center mb-4">Formulario de Contacto</h2>
 
-    <form>
-      <div class="form-group">
-        <label for="nombre">Nombre</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-      </div>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <form class="needs-validation" novalidate>
 
-      <div class="form-group">
-        <label for="email">Correo electrónico</label>
-        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
-      </div>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+          <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+        </div>
 
-      <div class="form-group">
-        <label for="telefono">Teléfono</label>
-        <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
-      </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
+          <div class="invalid-feedback">Ingrese un correo válido.</div>
+        </div>
 
-      <div class="form-group">
-        <label for="direccion">Dirección</label>
-        <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
-      </div>
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control" id="telefono" placeholder="Ej: (011) 1234-5678" required>
+          <div class="invalid-feedback">Por favor, ingrese su número.</div>
+        </div>
 
-      <div class="form-group">
-        <label for="ciudad">Ciudad</label>
-        <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su ciudad">
-      </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="4" placeholder="Escriba su mensaje..." required></textarea>
+          <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
+        </div>
 
-      <div class="form-group">
-        <label for="mensaje">Mensaje</label>
-        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escriba su mensaje aquí"></textarea>
-      </div>
+        <div class="d-grid">
+        <button type="submit" class="btn btn-dark d-flex align-items-center justify-content-center gap-2">
+         <i class="bi bi-send-fill"></i> Enviar mensaje
+         </button>
 
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+        </div>
+
+      </form>
+    </div>
   </div>
+
+  <div class="text-center mt-5">
+   <p><i class="bi bi-envelope-fill me-2"></i> montejovictor779@gmail.com</p>
+   <p><i class="bi bi-telephone-fill me-2"></i> (011) 5965-7130</p>
+   <p><i class="bi bi-geo-alt-fill me-2"></i> Av. Siempre Viva 1234, CABA</p>
+
+  </div>
+</div>
+
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center p-3 mt-5">
