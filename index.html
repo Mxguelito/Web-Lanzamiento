@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTime-Tu nuevo reloj inteligente</title>
+
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com./css2?family=Roboto&display=swap">
+    <!--CSS propio-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--Titulo-->
+        <a class="navbar-brand" href="#">Smartime</a>
+        <!--Botón que aparece en el celular para desplegar el menú-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+            <span class="navbar-toggler-icon"></span> 
+
+        </button>
+
+        <!--Menú de navegación-->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/versiones.html">Versiones</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/sucursales.html">Sucursales</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!--SECCIÓN DE PRESENTACION/PORTADA-->
+    <header class="jumbotron text-center bg-primary text-white">
+        <h1 class="display-4">¡Bienvenido a Smartime!</h1>
+        <p class="lead">Conocé las características de nuestro nuevo producto innovador.</p>
+        <a href="pages/versiones.html" class="btn btn-light">Ver versiones</a>
+     </header>
+
+     <!--SECCIÓN DE CARACTERÍSTICAS-->
+     <section class="container my-5">
+        <h2 class="text-center mb-4">¿Qué ofrece nuestro producto?</h2>
+
+        <div class="row">
+        <!--Característica 1-->
+        <div class="col-md-4 text-center">
+            <h4>Salud</h4>
+            <p>Monitorea tu cuerpo en tiempo real.</p>
+        </div>
+        <!--Característica 2-->
+        <div class="col-md-4 text-center">
+             <h4>Resistencia</h4>
+            <p>Ideal para deportes y uso extremo.</p>
+        </div>
+
+        <!--Característica 3-->
+        <div class="col-md-4 text-center">
+             <h4>Batería</h4>
+            <p>Bateria extendida de hasta 10 días.</p>
+        </div>
+      </div>
+     </section>
+
+      <!--PIE DE PÁGINA-->
+      <footer class="bg-dark text-white text-center p-3">
+        <p>2025 MiProducto - Todos los derechos reservados</p>
+        <p>Creado por Victor Montejo</p>
+      </footer>
+
+      <!--Bootstrap JavaScript (Para el menú responsive en celular)-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
